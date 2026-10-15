@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A HandyMan &amp; His Wife | Handyman in Akron, OH</title>
+<meta name="description" content="A HandyMan & His Wife — friendly family-run handyman service in Akron, OH. Drywall, painting, assembly, repairs. Call 330-999-1658.">
+<style>
+  :root{
+    --cream:#F6F0E3; --cream2:#EFE6D2; --walnut:#5C3F26; --walnut-d:#3E2A18;
+    --brass:#B08B57; --brass-d:#8F6E42; --ink:#2E2418; --sage:#7A8B6F;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,sans-serif;color:var(--ink);
+    background:var(--cream);
+    background-image:radial-gradient(rgba(92,63,38,.10) 1.2px,transparent 1.2px);
+    background-size:26px 26px;
+    overflow-x:hidden;line-height:1.65}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:var(--walnut-d);box-shadow:0 2px 12px rgba(62,42,24,.35)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+  .brand{display:flex;align-items:center;gap:10px;color:var(--cream);text-decoration:none;font-family:Georgia,serif;font-size:1.12rem}
+  .navlinks{display:flex;gap:20px;align-items:center}
+  .navlinks a{color:var(--cream);text-decoration:none;font-size:.9rem;opacity:.88}
+  .navlinks a:hover{opacity:1;color:var(--brass)}
+  .nav-cta{background:var(--brass);color:var(--walnut-d)!important;font-weight:700;padding:9px 20px;border-radius:999px;opacity:1!important}
+  .nav-cta:hover{background:var(--cream)}
+  @media(max-width:640px){.navlinks a:not(.nav-cta){display:none}}
+  /* HERO */
+  .hero{background:linear-gradient(165deg,var(--walnut-d) 0%,var(--walnut) 78%);color:var(--cream);border-bottom:6px solid var(--brass)}
+  .hero .wrap{padding:76px 20px 64px;text-align:center}
+  .house-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(246,240,227,.12);border:1px dashed var(--brass);border-radius:999px;padding:8px 20px;font-size:.85rem;margin-bottom:20px;color:var(--cream)}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.6rem);margin-bottom:12px}
+  .hero h1 em{color:var(--brass);font-style:italic}
+  .hero .lede{max-width:34rem;margin:0 auto 28px;color:#D9CBB2;font-size:clamp(1rem,2.4vw,1.18rem)}
+  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;font-weight:700;text-decoration:none;font-size:1rem;min-height:54px}
+  .btn-brass{background:var(--brass);color:var(--walnut-d)}
+  .btn-brass:hover{background:var(--cream)}
+  .btn-line{border:2px solid var(--brass);color:var(--cream)}
+  .btn-line:hover{background:rgba(176,139,87,.15)}
+  .hero-note{margin-top:22px;font-size:.88rem;color:#C4B08C}
+  /* STITCHED CARDS */
+  section{padding:70px 0}
+  .eyebrow{color:var(--brass-d);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.75rem;margin-bottom:10px;text-align:center}
+  h2.sec{font-size:clamp(1.8rem,4vw,2.5rem);text-align:center;margin-bottom:10px;color:var(--walnut-d)}
+  .sec-sub{text-align:center;color:#6B5B43;max-width:36rem;margin:0 auto 40px}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:820px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:540px){.svc-grid{grid-template-columns:1fr}}
+  .svc{background:#FFFDF7;border:2px dashed var(--brass);border-radius:16px;padding:28px 24px;position:relative;box-shadow:0 4px 0 rgba(92,63,38,.12)}
+  .svc .pin{position:absolute;top:-11px;left:50%;transform:translateX(-50%);width:22px;height:22px;border-radius:50%;background:var(--walnut);border:3px solid var(--brass)}
+  .svc h3{font-size:1.18rem;color:var(--walnut-d);margin:10px 0 8px}
+  .svc p{font-size:.93rem;color:#6B5B43}
+  .svc svg{margin-bottom:4px}
+  /* FAMILY */
+  .family{background:var(--cream2);border-top:2px dashed var(--brass);border-bottom:2px dashed var(--brass)}
+  .family-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:44px;align-items:center}
+  @media(max-width:760px){.family-grid{grid-template-columns:1fr}}
+  .duo{background:#FFFDF7;border:2px dashed var(--brass);border-radius:18px;padding:36px;text-align:center;box-shadow:0 4px 0 rgba(92,63,38,.12)}
+  .duo .names{font-family:Georgia,serif;font-size:1.3rem;color:var(--walnut-d);margin-top:14px}
+  .duo .role{font-size:.85rem;color:#8A7557}
+  .ticks{list-style:none;margin-top:20px}
+  .ticks li{display:flex;gap:12px;margin-bottom:16px;align-items:flex-start}
+  .ticks .tk{flex:none;width:28px;height:28px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+  .ticks strong{display:block;color:var(--walnut-d)}
+  .ticks span{color:#6B5B43;font-size:.93rem}
+  /* AREA */
+  .area-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .pill{background:var(--walnut);color:var(--cream);padding:12px 24px;border-radius:999px;font-weight:600;font-size:.95rem}
+  .pill.home{background:var(--brass);color:var(--walnut-d)}
+  /* CONTACT */
+  .contact{background:linear-gradient(165deg,var(--walnut) 0%,var(--walnut-d) 100%);color:var(--cream);text-align:center;border-top:6px solid var(--brass)}
+  .contact h2.sec{color:var(--cream)}
+  .contact .sec-sub{color:#D9CBB2}
+  .big-phone{font-family:Georgia,serif;font-size:clamp(1.9rem,5.5vw,2.8rem);color:var(--brass);text-decoration:none;display:block;margin-bottom:24px}
+  .big-phone:hover{color:var(--cream)}
+  footer{background:var(--walnut-d);color:#A98F68;padding:32px 0;font-size:.86rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+  footer a{color:var(--brass);text-decoration:none}
+  .credit{font-size:.78rem;color:#7A6244}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M4 15 15 6l11 9" stroke="#B08B57" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><rect x="10" y="15" width="10" height="9" rx="1" stroke="#F6F0E3" stroke-width="2"/><path d="M12 8h6M15 4v4" stroke="#B08B57" stroke-width="2" stroke-linecap="round"/></svg>
+      A HandyMan &amp; His Wife
+    </a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#family">Our Story</a>
+      <a href="#area">Area</a>
+      <a href="#contact" class="nav-cta">Get a Quote</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="house-badge">🏠 &nbsp;Family-run · Akron, Ohio</div>
+    <h1>That honey-do list? <em>Consider it done.</em></h1>
+    <p class="lede">We're a husband-and-wife handyman team serving Akron and the surrounding towns. One call handles the drips, squeaks, cracks, and wobbles — treated like our own home.</p>
+    <div class="cta-row">
+      <a class="btn btn-brass" href="tel:+13309991658">📞 330-999-1658</a>
+      <a class="btn btn-line" href="mailto:ahandymanandhiswife@gmail.com">Email Us</a>
+    </div>
+    <p class="hero-note">Serving homes within about an hour of Akron · Free estimates</p>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow">What we do</div>
+    <h2 class="sec">Small jobs, done with care</h2>
+    <p class="sec-sub">The little things other contractors won't come out for — that's our whole business.</p>
+    <div class="svc-grid">
+      <div class="svc"><span class="pin"></span>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8F6E42" stroke-width="1.8"><path d="M4 20h16M6 20V10l6-6 6 6v10" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20v-5h4v5" stroke-linecap="round"/></svg>
+        <h3>Drywall &amp; Painting</h3><p>Holes patched, seams smoothed, rooms repainted — walls that look new again.</p>
+      </div>
+      <div class="svc"><span class="pin"></span>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8F6E42" stroke-width="1.8"><path d="M14 7l3 3L8 19l-4 1 1-4L14 7z" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 5l3 3" stroke-linecap="round"/></svg>
+        <h3>Furniture Assembly</h3><p>Flat-pack furniture, shelving, and mounts — assembled right, no leftover screws.</p>
+      </div>
+      <div class="svc"><span class="pin"></span>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8F6E42" stroke-width="1.8"><rect x="5" y="10" width="14" height="10" rx="1"/><path d="M12 10V7a3 3 0 0 1 3-3" stroke-linecap="round"/><circle cx="12" cy="15" r="1.4" fill="#8F6E42"/></svg>
+        <h3>Doors &amp; Locks</h3><p>Sticking doors, new deadbolts, handles and hinges — security that works.</p>
+      </div>
+      <div class="svc"><span class="pin"></span>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8F6E42" stroke-width="1.8"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Minor Electrical &amp; Plumbing</h3><p>Outlets, switches, ceiling fans, leaky faucets, running toilets.</p>
+      </div>
+      <div class="svc"><span class="pin"></span>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8F6E42" stroke-width="1.8"><path d="M3 18h18M5 18v-8h14v8M5 14h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Deck &amp; Fence Fixes</h3><p>Loose boards, wobbly rails, gate repairs — outdoor spaces made safe.</p>
+      </div>
+      <div class="svc"><span class="pin"></span>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8F6E42" stroke-width="1.8"><path d="M9 11l3 3 8-8" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6" stroke-linecap="round"/></svg>
+        <h3>Home Maintenance</h3><p>Seasonal checklists: caulking, filters, weatherstripping, gutter basics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="family" id="family">
+  <div class="wrap family-grid">
+    <div class="duo">
+      <svg width="96" height="96" viewBox="0 0 96 96" fill="none">
+        <circle cx="34" cy="38" r="16" fill="#EFE6D2" stroke="#5C3F26" stroke-width="2.5"/><path d="M18 82c2-14 8-22 16-22s14 8 16 22" fill="#EFE6D2" stroke="#5C3F26" stroke-width="2.5"/>
+        <circle cx="62" cy="38" r="16" fill="#EFE6D2" stroke="#5C3F26" stroke-width="2.5"/><path d="M46 82c2-14 8-22 16-22s14 8 16 22" fill="#EFE6D2" stroke="#5C3F26" stroke-width="2.5"/>
+        <rect x="42" y="52" width="12" height="16" rx="2" fill="#B08B57"/>
+      </svg>
+      <div class="names">A HandyMan &amp; His Wife</div>
+      <div class="role">Akron's husband-and-wife fix-it team</div>
+    </div>
+    <div>
+      <div class="eyebrow" style="text-align:left">Our story</div>
+      <h2 class="sec" style="text-align:left">Two people. One toolbox. Zero runaround.</h2>
+      <p style="color:#6B5B43;margin-bottom:8px">Big contractors don't return calls for small jobs — we built our whole business around them. When you call us, you talk to us. When we show up, it's us. Every time.</p>
+      <ul class="ticks">
+        <li><span class="tk">✓</span><div><strong>You'll know who's coming</strong><span>No strangers, no day-labor rotation — just the two of us.</span></div></li>
+        <li><span class="tk">✓</span><div><strong>Honest about what we can't do</strong><span>If a job needs a licensed specialist, we'll tell you straight and point you right.</span></div></li>
+        <li><span class="tk">✓</span><div><strong>Tidy, every time</strong><span>We vacuum up, haul the scraps, and leave it cleaner than we found it.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <div class="eyebrow">Where we work</div>
+    <h2 class="sec">Akron &amp; neighbors</h2>
+    <p class="sec-sub">Based in Akron — we travel about an hour in every direction.</p>
+    <div class="area-pills">
+      <span class="pill home">Akron</span><span class="pill">Cuyahoga Falls</span><span class="pill">Stow</span><span class="pill">Barberton</span><span class="pill">Tallmadge</span><span class="pill">Kent</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--brass)">Say hello</div>
+    <h2 class="sec">Got a list? Let's knock it out.</h2>
+    <p class="sec-sub">Call, text, or email — snap a photo of the problem and we'll give you a straight answer.</p>
+    <a class="big-phone" href="tel:+13309991658">330-999-1658</a>
+    <div class="cta-row">
+      <a class="btn btn-brass" href="mailto:ahandymanandhiswife@gmail.com">ahandymanandhiswife@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 A HandyMan &amp; His Wife · Akron, OH · <a href="tel:+13309991658">330-999-1658</a></div>
+    <div class="credit">Demo website by Wahab Codes</div>
+  </div>
+</footer>
+
+</body>
+</html>
